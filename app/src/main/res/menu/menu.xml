@@ -4,9 +4,9 @@
     <item
         android:id="@+id/expandAll"
         app:showAsAction="never"
-        android:title="ExpandAll" />
+        android:subject="ExpandAll" />
     <item
         app:showAsAction="never"
         android:id="@+id/collapseAll"
-        android:title="CollapseAll" />
+        android:subject="CollapseAll" />
 </menu>
