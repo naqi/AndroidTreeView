@@ -73,11 +73,11 @@ Extend ```TreeNode.BaseNodeViewHolder``` and overwrite ```createNodeView``` meth
 public class MyHolder extends TreeNode.BaseNodeViewHolder<IconTreeItem> {
     ...
     @Override
-    public View createNodeView(TreeNode node, IconTreeItem value) {
+    public View createNodeView(TreeNode node, IconTreeItem listOfEmails) {
         final LayoutInflater inflater = LayoutInflater.from(context);
         final View view = inflater.inflate(R.layout.layout_profile_node, null, false);
         TextView tvValue = (TextView) view.findViewById(R.id.node_value);
-        tvValue.setText(value.text);
+        tvValue.setText(listOfEmails.text);
         
         return view;
     }
